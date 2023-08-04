@@ -17,6 +17,8 @@ function sayHello(username){
     greeting.innerText = `Hi! ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
     clock.classList.remove(HIDDEN_CLASSNAME);
+    toDoForm.classList.remove(HIDDEN_CLASSNAME);
+    toDoList.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUserName = localStorage.getItem(USERNAME);
