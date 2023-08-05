@@ -33,7 +33,7 @@ function paintToDo(newToDo){
     const toDoText = document.createElement("span");
     toDoText.innerText = newToDo.text;
     const delBtn = document.createElement("button");
-    delBtn.innerText = "✖︎";
+    delBtn.innerText = "X";
     delBtn.addEventListener("click", delToDo);
 
     liTag.appendChild(toDoText);
