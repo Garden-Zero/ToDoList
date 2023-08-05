@@ -44,7 +44,7 @@ function paintToDo(newToDo){
 function delToDo(event){
     const li = event.target.parentElement;
     toDos = toDos.filter(toDo => {
-        toDo.id !== parseInt(li.id);
+        return toDo.id !== parseInt(li.id);
     })
     li.remove();
     saveToDos();
